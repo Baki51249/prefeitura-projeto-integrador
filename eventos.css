@@ -1,0 +1,61 @@
+.evento-item {
+    display: flex;
+    margin: 40px;
+    background-color: #E4ECC5;
+    border: 1px solid black;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 40px;
+    position: relative;
+    border-radius: 9px;
+}
+
+.evento-item img {
+    width: 200px;
+    height: 200px;
+}
+
+main {
+    grid-template-columns: 1fr;
+}
+
+.evento-item div {
+    width: 100%;
+}
+
+.evento-texto img {
+    width: 40px;
+    height: auto;
+    object-fit: cover;
+    
+}
+
+.evento-texto ul,
+.evento-texto li {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    
+}
+
+.evento-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+button {
+    background-color: #eb634ee4;
+    border-radius: 9px;
+    color: #ffffff;
+    padding: 11px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #EB644E;
+}

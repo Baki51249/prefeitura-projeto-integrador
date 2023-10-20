@@ -1,0 +1,62 @@
+h2 {
+  font-size: 26px;
+  text-align: start;
+  margin-top: 12px;
+  margin-left: 12px;
+}
+
+p {
+  font-size: 20px;
+  margin-top: 24px;
+  text-align: justify;
+  padding: 24px;
+}
+
+.ponto-turistico {
+  background-color: white;
+  box-shadow: 2px 2px 0px rgb(97, 95, 95);
+  border-radius: 5px;
+  width: 150%;
+  height: 270px;
+  margin-bottom: 24px;
+  border: 1px solid black;
+}
+
+ul {
+  list-style: none;
+}
+
+.pontos-lista img {
+  border-radius: 12px;
+  width: 300px;
+  height: 265px;
+  padding: 12px;
+  object-fit: cover;
+}
+
+.localizacao {
+  max-width: 28px;
+  max-height: 28px;
+}
+
+.localizacao div {
+  position: absolute;
+}
+
+main ul li {
+  display: flex;
+}
+
+main ul li:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.ponto-turistico h2::before {
+  content: "";
+  display: inline-block;
+  background-image: url("localizacao.svg");
+  width: 18px;
+  height: 18px;
+  background-size: cover;
+  margin-right: 10px;
+}

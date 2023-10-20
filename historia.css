@@ -1,0 +1,61 @@
+main {
+    grid-template-columns: 1fr;
+}
+
+.carousel {
+    max-width: 500px;
+    box-shadow: 3px 2px 1px rgb(118, 116, 116);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.carousel img {
+    height: 400px;
+    object-fit: cover;
+   
+    
+}
+
+.introducao {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    gap: 40px;
+
+}
+
+.introducao-texto h2 {
+    text-decoration: underline;
+    padding-bottom: 16px;
+    text-align: center;
+}
+
+.introducao-texto p {
+    text-align: justify;
+    text-indent: 50px;
+    line-height: 22px;
+
+}
+
+.curiosidade p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+.curiosidade h2 {
+    text-decoration: underline;
+    padding-bottom: 16px;
+    text-align: center;
+}
+
+iframe {
+    height: 400px;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 1px rgb(122, 120, 120);
+
+}
+
+b {
+    font-weight: bold;
+    font-size: 18px;
+}

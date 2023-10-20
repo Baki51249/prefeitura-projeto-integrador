@@ -1,0 +1,61 @@
+
+
+
+
+form input {
+
+  width: 400px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid black;
+  text-align: left;
+  text-transform: uppercase;
+  box-shadow: 2px 2px 1px rgb(125, 123, 123);
+  padding: 10px;
+
+}
+
+p {
+  font-size: 24px;
+  text-align: center;
+  justify-content: center;
+  width: 1200px !important;
+
+}
+
+form textarea {
+  width: 400px;
+  text-align: left;
+  border-radius: 12px;
+  text-transform: uppercase;
+  padding: 10px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 1px rgb(125, 123, 123);
+
+}
+
+form {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  width: 400px;
+  text-align: center;
+  border-radius: 12px;
+  text-transform: uppercase;
+  background-color: #1B469A;
+  color: white;
+  padding: 10px;
+
+}
+
+.container {
+  grid-template-columns: 1fr;
+}
+
+.file {
+  padding: 0px;
+}
