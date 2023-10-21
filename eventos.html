@@ -39,130 +39,16 @@
     </nav>
   </header>
   <main class="container">
-    <ul class="eventos-lista">
-      <li class="evento-item">
-        <img src="img/classico11.jpg" alt="">
-        <div class="evento-texto">
-          <div>
-           
-             <a href="https://www.ingressolive.com/login"target="_blank"><button >COMPRAR AGORA</button></a>
-            <h2>URT X MAMORÉ</h2>
-            <p>Confronto Épico nos Gramados!</p>
-          </div>
-
-          <ul>
-            <li>
-              <img src="img/data.png" alt="">
-              <p> 10/10/2023 as 15h.</p>
-            </li>
-            <li>
-              <img src="img/loc.png" alt="">
-              <p>Estadio Zama Maciel Avenida Brasil, 1085.</p>
-            </li>
-          </ul>
-
-        </div>
-
-      </li>
-      <li class="evento-item">
-        <img src="img/IMG-20230930-WA0033.jpg" alt="">
-        <div class="evento-texto">
-          <div>
-            <a href="https://www.ingressolive.com/login"target="_blank"><button >COMPRAR AGORA</button></a>
-            <h2>Mundial de Karatê-Valendo.</h2>
-            <p>Prepare-se para uma competição de Karatê como nenhuma outra!</p>
-          </div>
-          <ul>
-            <li>
-              <img src="img/data.png" alt="">
-              <p> 25/10/2023 às 12h</p>
-            </li>
-            <li>
-              <img src="img/loc.png" alt="">
-              <p>Centro de Treinamento Ashtekan</p>
-            </li>
-          </ul>
-        </div>
-
-
-      </li>
-      <li class="evento-item">
-        <img src="img/IMG-20230930-WA0041.jpg" alt="">
-        <div class="evento-texto">
-          <div>
-            <a href="https://www.ingressolive.com/login"target="_blank"><button >COMPRAR AGORA</button></a>
-            <h2> MEGA ENCONTRO AUTOMOTIVO.</h2>
-            <p>Evento presencial em Centro de Convenções da Unipam </p>
-          </div>
-          <ul>
-            <li>
-              <img src="img/data.png" alt="">
-              <p>09:00 às 18:00</p>
-            </li>
-            <li>
-              <img src="img/loc.png" alt="">
-              <p>Unipam, Patos de Minas-MG 29 out 2023 </p>
-            </li>
-          </ul>
-        </div>
-
-      </li>
-      <li class="evento-item">
-        <img src="img/Academia.jpg" alt="">
-        <div class="evento-texto">
-          <div>
-            <a href="https://www.ingressolive.com/login"target="_blank"><button >COMPRAR AGORA</button></a>
-            <h2>Treinamento Funcional para a Saúde. </h2>
-            <p>Entender as características anatômicas, fisiológicas e biomecânicas da mulher para a prescrição do
-              treinamento de força seguro e eficiente.
-              Prescrever o Treinamento Funcional baseado em aspectos teóricos e práticos.</p>
-          </div>
-          <ul>
-            <li>
-              <img src="img/data.png" alt="">
-              <p>13/10/23 as 15:30</p>
-            </li>
-            <li>
-              <img src="img/loc.png" alt="">
-              <p>Local a definir</p>
-            </li>
-          </ul>
-
-
-
-        </div>
-
-      </li>
-      <li class="evento-item">
-        <img src="img/Screenshot.jpg" alt="">
-        <div class="evento-texto">
-          <div>
-            <a href="https://www.ingressolive.com/login"target="_blank"><button >COMPRAR AGORA</button></a>
-            <h2>Experiência rural.</h2>
-            <p>12/10 Experiência rural no Recanto da Zezé: Trilha, cachoeira e comida mineira </p>
-          </div>
-          <ul>
-            <li>
-              <img src="img/data.png" alt="">
-              <p> 12/10/23 as 07:30 </p>
-            </li>
-            <li>
-              <img src="img/loc.png" alt="">
-
-              <p>Evento presencial em Recanto da Zezé, São Gonçalo do Abaeté - MG</p>
-            </li>
-          </ul>
-
-
-        </div>
-
-      </li>
+    <select class="select" id="filtro" onchange="filtrar()">
+      <option value="0">Todos Eventos</option>
+      <option value="1">Culturais</option>
+      <option value="2">Esportivo</option>
+    </select>
+    <ul class="eventos-lista" id="eventos">
     </ul>
-    </div>
-
-
   </main>
   <footer>Prefeitura de Patos de Minas @2023</footer>
+  <script src="eventos.js"></script>
 </body>
 
 </html>
