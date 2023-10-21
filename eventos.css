@@ -59,3 +59,8 @@ button:hover{
     cursor: pointer;
     background-color: #EB644E;
 }
+select{
+    padding: 11px;
+width: 150px; 
+right: 10px;
+}
