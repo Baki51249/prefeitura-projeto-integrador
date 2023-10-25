@@ -17,6 +17,9 @@
 
 main {
     grid-template-columns: 1fr;
+    position: relative;
+    margin-top: 0px !important;
+    padding-top: 80px;
 }
 
 .evento-item div {
@@ -27,7 +30,7 @@ main {
     width: 40px;
     height: auto;
     object-fit: cover;
-    
+
 }
 
 .evento-texto ul,
@@ -35,7 +38,7 @@ main {
     display: flex;
     gap: 30px;
     align-items: center;
-    
+
 }
 
 .evento-texto {
@@ -55,12 +58,15 @@ button {
 
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
     background-color: #EB644E;
 }
-select{
+
+select {
+    position: absolute;
     padding: 11px;
-width: 150px; 
-right: 10px;
+    width: 150px;
+    right: 50px;
+    top: 20px
 }
