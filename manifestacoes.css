@@ -19,7 +19,7 @@ p {
   font-size: 24px;
   text-align: center;
   justify-content: center;
-  width: 1200px !important;
+
 
 }
 
@@ -58,4 +58,17 @@ button {
 
 .file {
   padding: 0px;
+}
+@media screen and (max-width:900px) {
+
+p{
+  font-size: 16px;
+}
+input, textarea, button{
+  width: 100% !important;
+}
+main{ 
+  margin-top: 0px !important;
+}
+
 }

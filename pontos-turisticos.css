@@ -2,7 +2,7 @@ h2 {
   font-size: 26px;
   text-align: start;
   margin-top: 12px;
-  margin-left: 12px;
+ text-indent: 70px;
 }
 
 p {
@@ -10,6 +10,7 @@ p {
   margin-top: 24px;
   text-align: justify;
   padding: 24px;
+  text-indent: 30px;
 }
 
 .ponto-turistico {
@@ -17,7 +18,7 @@ p {
   box-shadow: 2px 2px 0px rgb(97, 95, 95);
   border-radius: 5px;
   width: 150%;
-  height: 270px;
+  height: 100%x;
   margin-bottom: 24px;
   border: 1px solid black;
 }
@@ -27,11 +28,11 @@ ul {
 }
 
 .pontos-lista img {
-  border-radius: 12px;
   width: 300px;
   height: 265px;
-  padding: 12px;
   object-fit: cover;
+  border-radius: 5px;
+
 }
 
 .localizacao {
@@ -51,12 +52,27 @@ main ul li:nth-child(even) {
   flex-direction: row-reverse;
 }
 
-.ponto-turistico h2::before {
-  content: "";
-  display: inline-block;
-  background-image: url("localizacao.svg");
-  width: 18px;
-  height: 18px;
-  background-size: cover;
-  margin-right: 10px;
+@media  screen and (max-width:650px) {
+  .ponto-turistico{
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+
+  }
+  .ponto-turistico img{
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .descricao h2{
+text-indent: 0px;
+    text-align: center;
+
+
+  }
+ 
+  
+  
 }

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en-pt">
 
 
 <head>
@@ -11,13 +11,13 @@
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="eventos.css">
-  <link rel="icon" href="img/brasao-patos.png" type="image/x-icon">
+  <link rel="icon" href="img/icones/brasao-patos.png" type="image/x-icon">
 
 </head>
 
 <body>
   <header>
-    <img class="brasao" src="img/brasao-patos.png" alt="brasão de patos de minas">
+    <img class="brasao" src="img/icones/brasao-patos.png" alt="brasão de patos de minas">
     <nav>
       <ul class="cabecalho">
         <a href="index.html">
@@ -37,6 +37,20 @@
         </a>
       </ul>
     </nav>
+    <div class="hamburger-menu">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+        <span></span>
+      </label>
+  
+      <ul class="menu__box">
+        <li><a class="menu__item" href="index.html">Início</a></li>
+        <li><a class="menu__item" href="historia.html">História</a></li>
+        <li class="active"><a class="menu__item" href="eventos.html">Eventos</a></li>
+        <li><a class="menu__item" href="pontos-turisticos.html">Pontos Turísticos</a></li>
+        <li><a class="menu__item" href="manifestacoes.html">Manifestações</a></li>
+      </ul>
+    </div>
   </header>
   <main class="container">
     <select class="select" id="filtro" onchange="filtrar()">

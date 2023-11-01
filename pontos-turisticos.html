@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-pt">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pontos Turísticos</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="icon" href="img/brasao-patos.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="icon" href="img/icones/brasao-patos.png" type="image/x-icon">
     <link rel="stylesheet" href="pontos-turisticos.css">
-    <link rel="stylesheet" href="style.css"></link>
+    </link>
+    <link rel="stylesheet" href="style.css">
+    </link>
 </head>
 
 <body>
     <header>
-        <img class="brasao" src="img/brasao-patos.png" alt="brasão de patos de minas">
+        <img class="brasao" src="img/icones/brasao-patos.png" alt="brasão de patos de minas">
         <nav>
             <ul class="cabecalho">
                 <a href="index.html">
@@ -34,10 +37,31 @@
                 </a>
             </ul>
         </nav>
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+
+            <ul class="menu__box">
+                <a class="menu__item" href="index.html">
+                <li>Início</li></a>
+                <a class="menu__item" href="historia.html">
+                <li>História</li></a>
+                <a class="menu__item" href="eventos.html">
+                <li>Eventos</li></a>
+                <a class="menu__item" href="pontos-turisticos.html">
+                <li class="active">Pontos Turísticos</li></a>
+                <a class="menu__item" href="manifestacoes.html">
+                <li>Manifestações</li></a>
+            </ul>
+        </div>
     </header>
     <main class="container">
         <ul class="pontos-lista">
             <li class="ponto-turistico">
+                <img src="img/ponto-turistico/Lagoa-Grande.jpg" alt="imagem da lagoa grande">
+
                 <div class="descricao">
                     <h2>Lagoa Grande:</h2>
                     <p>Além de ser o cartão postal da cidade, tem vários atrativos, como; local para fazer caminhadas,
@@ -45,10 +69,10 @@
                         bem ao lado da rodoviária de Patos de Minas, o visitante já chega e vislumbra as belezas do
                         local.</p>
                 </div>
-                <img src="img/lagoa-grande.jpg" alt="">
 
             </li>
             <li class="ponto-turistico">
+                <img src="img/ponto-turistico/Mocambo-pato.jpeg" alt="imagem do parque do mocambo com pato">
 
                 <div class="descricao">
                     <h2>Parque Municipal do Mocambo:</h2>
@@ -57,37 +81,39 @@
                         de fácil acesso que abriga diversos tipos de da fauna e flora, atrai vários visitantes ao longo
                         do dia sendo maioria aos fins de semana.</p>
                 </div>
-                <img src="img/Mocambo-pato.jpeg" alt="">
 
             </li>
             <li class="ponto-turistico">
+                <img src="img/ponto-turistico/Champagnat.jpg" alt="imagem da praça champagnat vista de cima">
                 <div class="descricao">
                     <h2>Praça Champagnat:</h2>
                     <p>Está no bairro Centro do município de Patos de Minas, praça com ponto de interseção de principais
                         ruas da cidade, rua Major Gote e rua Major Jerônimo, antigamente conhecida como "BALÃO DA
                         VOLKS", recentemente reformada pela atual administração municipal.</p>
                 </div>
-                <img src="img/Champion .jpg" alt="">
+
             </li>
             <li class="ponto-turistico">
+                <img src="img/ponto-turistico/Catedral.jpg" alt="imagem da catedral vista do alto">
                 <div class="descricao">
                     <h2>Catedral de Santo Antonio:</h2>
                     <p>Principal edificação religiosa católica de Patos de MInas, fundada na década de 50, possui
                         arquitetura única neogótica e é um dos principais atrativos turísticos da cidade.
                         Situada no centro de Patos de Minas na Praça Dom Eduardo. Final da avenida Getulio Vargas.</p>
                 </div>
-                <img src="img/Catedral.jpg" alt="">
             </li>
             <li class="ponto-turistico">
+                <img src="img/ponto-turistico/museu.jpeg" alt="imagem do museu da cidade vista de drone">
                 <div class="descricao">
                     <h2>Museu da cidade de Patos de Minas:</h2>
                     <p>Antiga casa de Olegário Maciel, hoje museu da cidade e sede do Teatro Leão de Formosa, abriga
                         antiguidades que contam histórias dos antigos fundadores do município, situado na Avenida
                         Getúlio Vargas, abriga acervo cultural e histórico do município.</p>
                 </div>
-                <img src="img/museu.jpeg" alt="">
+
             </li>
             <li class="ponto-turistico">
+                <img src="img/ponto-turistico/mercado.jpg" alt="imagem do mercado municipal">
                 <div class="descricao">
                     <h2>Mercado Municipal:</h2>
                     <p>Idealizado em meados de 1917 e com uma arquitetura modernista para a época, hoje é um centro
@@ -95,10 +121,11 @@
                         abriga várias lojas e dispõe de várias iguarias para o deleite dos visitantes, ponto de onibus
                         intemunicipal e municipal, grande quantidade de pessoas passam diariamente pelo local.</p>
                 </div>
-                <img src="img/mercado.jpg" alt="">
+
             </li>
         </ul>
     </main>
-      <footer>Prefeitura de Patos de Minas @2023</footer>
+    <footer>Prefeitura de Patos de Minas @2023</footer>
 </body>
+
 </html>

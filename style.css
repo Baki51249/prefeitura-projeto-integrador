@@ -1,24 +1,25 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
 
 * {
     margin: 0px;
-    padding: 0PX;
+    padding: 0px;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
-p{
+p {
     margin: 0px !important;
 }
-body{
+
+body {
     background-color: #E9F2F4;
 }
-img{
+
+img {
     max-width: 100%;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
@@ -33,7 +34,7 @@ header nav {
     align-items: center;
     height: 80px;
     margin-top: 40px;
-    
+
 }
 
 header ul {
@@ -53,48 +54,53 @@ header {
     text-align: center;
     margin-top: 40px;
 }
-.active{
+
+.active {
     text-decoration: underline;
 }
- main{
+
+main {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 40px;
     margin-top: 69px !important;
- }
+}
 
- .container{
+.container {
     max-width: 1300px;
     margin: 0 auto;
 
- }
+}
 
- .lista-acesso li{
-background-color: #0075FF;
-width: 100%;
-height: 120px;
-border-radius: 10px;
-color: #ffffff;
-display: flex;
-text-align: center;
-align-items: center;
-justify-content: center;
-font-size: 16px;
+.lista-acesso li {
+    background-color: #0075FF;
+    width: 100%;
+    height: 120px;
+    border-radius: 10px;
+    color: #ffffff;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
 
- }
-.rapido ul{
+}
+
+.rapido ul {
     display: grid;
     gap: 9px;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
 
-  
- }
- a li:hover {
-background-color: #82B4EE;
 
- }
+}
 
- footer{
+a li:hover {
+    background-color: #82B4EE;
+    color: rgb(0, 0, 0);
+
+}
+
+footer {
     text-align: center;
     background-color: #1B469A;
     display: flex;
@@ -104,11 +110,142 @@ background-color: #82B4EE;
     margin-top: 40px;
     color: #ffffff;
     padding: 20px;
- }
-.carousel-item div{
+}
+
+.carousel-item div {
     background-color: #c9c9c950;
 }
 
-.carousel-item a{
+.carousel-inner,
+.carousel-item,
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.carousel-inner {
+
+    box-shadow: 3px 2px 1px rgb(95, 93, 93);
+    border-radius: 12px;
+    overflow: hidden;
+
+}
+
+.carousel-item a {
     color: #ffffff;
+}
+
+.carousel {
+    z-index: -1;
+}
+
+/*hamburguer*/
+.hamburger-menu {
+    display: none;
+    z-index: 999 !important;
+    position: relative;
+}
+
+#menu__toggle {
+    opacity: 0;
+}
+
+#menu__toggle:checked+.menu__btn>span {
+    transform: rotate(45deg);
+}
+
+#menu__toggle:checked+.menu__btn>span::before {
+    top: 0;
+    transform: rotate(0deg);
+}
+
+#menu__toggle:checked+.menu__btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu__toggle:checked~.menu__box {
+    left: 0 !important;
+}
+
+.menu__btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+    transition-duration: .25s;
+}
+
+.menu__btn>span::before {
+    content: '';
+    top: -8px;
+}
+
+.menu__btn>span::after {
+    content: '';
+    top: 8px;
+}
+
+.menu__box {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 200px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #1b459ad3;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+    transition-duration: .25s;
+}
+
+.menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #fefdfd;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+}
+
+.menu__item:hover {
+    background-color: #CFD8DC;
+}
+
+@media screen and (max-width:900px) {
+    main {
+        grid-template-columns: 1fr;
+
+    }
+
+    nav {
+        display: none !important;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .brasao {
+        width: 90px;
+        height: 90px;
+    }
 }

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html>
 
+<html lang="en-pt">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>História da Cidade</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="icon" href="img/brasao-patos.png" type="image/x-icon">
+  <link rel="icon" href="img/icones/brasao-patos.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="historia.css">
 
@@ -15,7 +15,7 @@
 
 <body>
   <header>
-    <img src="img/brasao-patos.png" alt="brasão de patos de minas">
+    <img src="img/icones/brasao-patos.png" alt="brasão de patos de minas">
     <nav>
       <ul class="cabecalho">
         <a href="index.html">
@@ -35,6 +35,20 @@
         </a>
       </ul>
     </nav>
+    <div class="hamburger-menu">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+        <span></span>
+      </label>
+  
+      <ul class="menu__box">
+        <li><a class="menu__item" href="index.html">Início</a></li>
+        <li class="active"><a class="menu__item" href="historia.html">História</a></li>
+        <li><a class="menu__item" href="eventos.html">Eventos</a></li>
+        <li><a class="menu__item" href="pontos-turisticos.html">Pontos Turísticos</a></li>
+        <li><a class="menu__item" href="manifestacoes.html">Manifestações</a></li>
+      </ul>
+    </div>
   </header>
   <main class="container">
 
@@ -60,35 +74,55 @@
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="img/antigo-forum.jfif" alt="Primeiro Slide">
+            <img class="d-block w-100" src="img/história/antigo-forum.jfif" alt="Primeiro Slide">
             <div class="carousel-caption d-none d-md-block"></div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="img/antigo-forum2.jfif" alt="Segundo Slide">
+            <img class="d-block w-100" src="img/história/antigo-forum2.jfif" alt="Segundo Slide">
             <div class="carousel-caption d-none d-md-block"></div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="img/casa luz.jpg" alt="Terceiro Slide">
+            <img class="d-block w-100" src="img/história/casa luz.jpg" alt="Terceiro Slide">
             <div class="carousel-caption d-none d-md-block"></div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="img/casa-antiga.jfif" alt="Quarto Slide">
+            <img class="d-block w-100" src="img/história/casa-antiga.jfif" alt="Quarto Slide">
             <div class="carousel-caption d-none d-md-block"></div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="img/venda.jpeg" alt="Quinto Slide">
+            <img class="d-block w-100" src="img/história/catedral-antiga.jpeg" alt="Quinto Slide">
             <div class="carousel-caption d-none d-md-block"></div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="img/cidade.jpg" alt="Slide Slide">
+            <img class="d-block w-100" src="img/história/cidade.jpg" alt="Sexto Slide">
             <div class="carousel-caption d-none d-md-block"></div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="img/getulio-vargas.jpeg" alt="Setimo Slide">
+            <img class="d-block w-100" src="img/história/colegio-normal.jfif" alt="Setimo Slide">
             <div class="carousel-caption d-none d-md-block"></div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="img/vista-alta.jfif" alt="Oitavo Slide">
+            <img class="d-block w-100" src="img/história/coreto2.jfif" alt="Oitavo Slide">
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/história/getulio-vargas.jpeg" alt="Nono Slide">
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/história/igreja.jpeg" alt="decimo Slide">
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/história/lagoa-grande2.jfif" alt="decimo primeiro Slide">
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/história/venda.jpeg" alt="decimo segundo Slide">
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/história/vista-alta.jfif" alt="decimo terceiro Slide">
             <div class="carousel-caption d-none d-md-block"></div>
           </div>
         </div>

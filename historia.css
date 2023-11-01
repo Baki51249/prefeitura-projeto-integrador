@@ -3,7 +3,7 @@ main {
 }
 
 .carousel {
-    max-width: 500px;
+    max-width: 100%;
     box-shadow: 3px 2px 1px rgb(118, 116, 116);
     border-radius: 12px;
     overflow: hidden;
@@ -12,8 +12,8 @@ main {
 .carousel img {
     height: 400px;
     object-fit: cover;
-   
-    
+
+
 }
 
 .introducao {
@@ -49,7 +49,7 @@ main {
 
 iframe {
     height: 400px;
-    max-width: 500px;
+    width: 500px;
     border-radius: 12px;
     box-shadow: 2px 2px 1px rgb(122, 120, 120);
 
@@ -58,4 +58,26 @@ iframe {
 b {
     font-weight: bold;
     font-size: 18px;
+}
+
+@media screen and (max-width:900px) {
+    main {
+        grid-template-columns: 1fr;
+
+    }
+
+    .introducao {
+        grid-template-columns: 1fr;
+
+    }
+
+    .carousel {
+        max-width: 100%;
+    }
+
+    iframe {
+        max-width: 100%;
+
+    }
+
 }
