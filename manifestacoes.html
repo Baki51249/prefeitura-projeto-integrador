@@ -56,18 +56,14 @@
     <p>Espaço para reclamações, sujestões e manifestação sobre algo pertinente sobre nosso município.
       Você pode também denunciar alguma irregularidade na sua rua, no seu bairro, basta preencher os espaços
       abaixo e anexar fotos, caso necessite.</p>
-
-    <form>
-
-      <input type="text" placeholder="nome">
-      <input type="text" placeholder="telefone">
-      <input type="text" placeholder="endereço">
-      <textarea name="desccrição" id="" cols="30" rows="10" placeholder="descrição"></textarea>
-      <input class="file" type="file" placeholder="anexar fotos">
-      <button id="enviar">enviar</button>
-
-
-    </form>
+ <form id="manifestacaoForm" action="https://formsubmit.co/ajax/gabrieldosreis557@gmail.com" method="POST" enctype="multipart/form-data">
+      <input type="text" name="nome" placeholder="Nome">
+      <input type="text" name="telefone" placeholder="Telefone">
+      <input type="text" name="endereco" placeholder="Endereço">
+      <textarea name="descricao" cols="30" rows="10" placeholder="Descrição"></textarea>
+      <input class="file" type="file" name="anexarFotos" placeholder="Anexar fotos">
+      <button type="button" id="enviar">Enviar</button>
+ </form>
   </main>
   <footer>Prefeitura de Patos de Minas @2023</footer>
 </body>
