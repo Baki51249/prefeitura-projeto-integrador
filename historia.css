@@ -12,9 +12,12 @@ main {
 .carousel img {
     height: 400px;
     object-fit: cover;
-
-
 }
+.carousel-item div {
+        background-color: #fff7f700;
+ 
+}
+
 
 .introducao {
     display: grid;
@@ -49,7 +52,7 @@ main {
 
 iframe {
     height: 400px;
-    width: 500px;
+    width: 600px;
     border-radius: 12px;
     box-shadow: 2px 2px 1px rgb(122, 120, 120);
 

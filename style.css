@@ -34,6 +34,7 @@ header nav {
     align-items: center;
     height: 80px;
     margin-top: 40px;
+   width: 100vi;
 
 }
 
@@ -91,7 +92,6 @@ main {
     gap: 9px;
     grid-template-columns: 1fr 1fr;
 
-
 }
 
 a li:hover {
@@ -110,10 +110,12 @@ footer {
     margin-top: 40px;
     color: #ffffff;
     padding: 20px;
+    width: 100vi;
 }
 
 .carousel-item div {
-    background-color: #c9c9c950;
+    background-color: #c9c9c933;
+    border-radius: 5px;
 }
 
 .carousel-inner,
@@ -137,7 +139,7 @@ footer {
 }
 
 .carousel {
-    z-index: -1;
+    z-index: 10;
 }
 
 /*hamburguer*/

@@ -30,23 +30,23 @@ var evento3 = {
 var evento4 = {
     nome: "Treinamento Funcional para a Saúde",
     desc: "Entender as características fisiológicas da mulher para a prescrição do treinamento de força seguro e eficiente.",
-    data: "13/10/23 as 15:30",
+    data: "07/10/23 às 08:30",
     local: "Parque do Mocambo",
-    imagem: "img/eventos/Academia.jpg",
+    imagem: "img/eventos/treino2.jfif",
     classif: 2
 }
 
 var evento5 = {
-    nome: "Experiência rural",
+    nome: "Experiência Rural",
     desc: "Evento voltado para a produção de hortaliças e prevenção de pragas.",
-    data: "12/10/23 as 07:30",
+    data: "12/10/23 às 07:30",
     local: "Recanto da Zezé, São Gonçalo do Abaeté - MG",
     imagem: "img/eventos/roça.jpg",
     classif: 1
 }
 
 var evento6 = {
-    nome: "Marcus Cirillo em Patos de Minas",
+    nome: "Marcus Cirillo",
     desc: "Show de Stand-up mais caipira do momento.",
     data: "15/10/2023 às 22:00",
     local: "UNIPAM - Auditório Bloco N. Rua Major Gote, 808 - Caiçaras",
@@ -55,24 +55,56 @@ var evento6 = {
 }
 
 var evento7 = {
-    nome: "Roupa Nova 40 Anos em Patos De Minas",
+    nome: "Roupa Nova 40 Anos",
     desc: "Show de comemoração dos 40 anos de sucesso.",
     data: "20/10/2023 às 22h",
     local: "Centro de Convenções e Eventos UNIPAM - Patos De Minas - MG",
     imagem: "img/eventos/RoupaNova.jpg",
     classif: 1
 }
-
 var evento8 = {
-    nome: "Show com PITTY em Patos De Minas",
+    nome: "Show com PITTY",
     desc: "Show de comemoração dos 40 anos de sucesso. ",
     data: "25/11/2023 às 20h",
     local: "Centro de Convenções e Eventos UNIPAM - Patos De Minas - MG",
     imagem: "img/eventos/Pitty.jpg",
     classif: 1
 }
+var evento9 = {
+    nome: "FLASH BACK MVN",
+    desc: "UMA NOITE PARA FESTEJAR , DANÇAR E CURTIR ENTRE AMIGOS. ",
+    data: "18/11/2023 às 22h",
+    local: "SALÃO DE FESTA DO 15ºBATALHÃO - Patos De Minas - MG",
+    imagem: "img/eventos/flashback.jfif",
+    classif: 1
+}
 
-var listaeventos = [evento1, evento2, evento3, evento4, evento5, evento6, evento7, evento8]
+var evento10 = {
+    nome: "F.O.D.A",
+    desc: "Enxame mais F.O.D.A ",
+    data: "04/12/2023 às 23h",
+    local: "Parque de Exposições - Patos De Minas - MG",
+    imagem: "img/eventos/foda.png",
+    classif: 1
+}
+var evento11 = {
+    nome: "VIRADA DO PANDEIRO",
+    desc: "RÉVEILLON 2024 ",
+    data: "31/12/2023 às 22h",
+    local: "Clube Caiçaras - Major Gote - Patos De Minas - MG",
+    imagem: "img/eventos/virada.png",
+    classif: 1
+}
+var evento12 = {
+    nome: "PATOS GAME SHOW",
+    desc: "Jogos on-line com os melhores gamers da atualidade ",
+    data: "30/11/2023 às 09h",
+    local: "UNIPAM - Major Gote - Patos De Minas - MG",
+    imagem: "img/eventos/games.jfif",
+    classif: 2
+}
+
+var listaeventos = [evento1, evento2, evento3, evento4, evento5, evento6, evento7, evento8, evento9, evento10, evento11, evento12]
 var listaElemento = document.getElementById("eventos")
 var filtro = document.getElementById("filtro")
 
@@ -93,7 +125,8 @@ listaeventos.forEach(evento => {
           <p> ${evento.data} </p>
         </li>
         <li>
-          <img src="img/icones/loc.png" alt="imagem de localizador">
+        <a href="https://www.google.com/maps/search/${evento.local}" target="_blank">
+          <img src="img/icones/loc.png" alt="imagem de localizador"></a>
 
           <p>${evento.local}</p>
         </li>
@@ -139,8 +172,8 @@ function filtrar() {
                   <p> ${evento.data} </p>
                 </li>
                 <li>
-                  <img src="img/icones/loc.png" alt="imagem de localizador">
-        
+                <a href="https://www.google.com/maps/search/${evento.local}" target="_blank">
+                <img src="img/icones/loc.png" alt="imagem de localizador"></a>
                   <p>${evento.local}</p>
                 </li>
               </ul>
@@ -185,8 +218,8 @@ Compre Agora
                     <p> ${evento.data} </p>
                 </li>
                 <li>
-                    <img src="img/icones/loc.png" alt="imagem de localizador">
-        
+                <a href="https://www.google.com/maps/search/${evento.local}" target="_blank">
+                <img src="img/icones/loc.png" alt="imagem de localizador"></a>
                     <p>${evento.local}</p>
                 </li>
                 </ul>
